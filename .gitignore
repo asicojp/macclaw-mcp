@@ -1,0 +1,8 @@
+node_modules/
+*.bak
+*.bak.*
+package.json.bak
+.env
+.env.*
+.DS_Store
+npm-debug.log*

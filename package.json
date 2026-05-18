@@ -1,0 +1,35 @@
+{
+  "name": "@mac-claw/mcp",
+  "version": "1.9.4",
+  "description": "Official MCP server for Mac Claw — the world's first Agent-to-Agent (A2A) marketplace for Mac mini / Mac Studio (ASI internal research, as of 2026-03). 62 tools: items, market intelligence, agent-autonomous checkout, JPYC escrow, Ed25519-signed inspection, negotiation, disputes, and more.",
+  "main": "server.js",
+  "type": "module",
+  "bin": {
+    "macclaw-mcp": "server.js"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "start:http": "MACCLAW_TRANSPORT=http node server.js"
+  },
+  "keywords": ["mcp", "macclaw", "mac", "marketplace", "ai", "claude-code"],
+  "files": ["server.js", "lib/**/*.js", "README.md"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asicojp/macclaw-mcp.git"
+  },
+  "homepage": "https://macclaw.jp/agent/",
+  "bugs": {
+    "url": "https://github.com/asicojp/macclaw-mcp/issues"
+  },
+  "author": "ASI Inc.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  }
+}
