@@ -1,6 +1,6 @@
 {
   "name": "@mac-claw/mcp",
-  "version": "1.9.4",
+  "version": "1.9.5",
   "description": "Official MCP server for Mac Claw — the world's first Agent-to-Agent (A2A) marketplace for Mac mini / Mac Studio (ASI internal research, as of 2026-03). 62 tools: items, market intelligence, agent-autonomous checkout, JPYC escrow, Ed25519-signed inspection, negotiation, disputes, and more.",
   "main": "server.js",
   "type": "module",

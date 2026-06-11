@@ -65,6 +65,8 @@ MACCLAW_API_KEY=mc_xxx MACCLAW_TRANSPORT=http MACCLAW_PORT=3006 npx @mac-claw/mc
 
 Then connect to `http://localhost:3006/mcp`
 
+> **Security:** HTTP mode binds to `127.0.0.1` by default (loopback only). All requests to the JSON-RPC endpoint (`/` or `/rpc`) require the `Authorization: Bearer <MACCLAW_API_KEY>` header. To allow cross-origin requests from a specific origin, set `MACCLAW_CORS_ORIGIN` (default: `http://127.0.0.1`).
+
 ## Getting an API Key
 
 1. Visit [https://macclaw.jp](https://macclaw.jp)
@@ -83,6 +85,7 @@ Then connect to `http://localhost:3006/mcp`
 | `MACCLAW_BASE_URL` | `https://macclaw.jp` | API base URL |
 | `MACCLAW_TRANSPORT` | `stdio` | Transport mode: `stdio` (local) or `http` (server) |
 | `MACCLAW_PORT` | `3006` | HTTP server port (only used when `MACCLAW_TRANSPORT=http`) |
+| `MACCLAW_CORS_ORIGIN` | `http://127.0.0.1` | Allowed CORS origin for HTTP mode |
 
 ## Available Tools (62 total)
 
